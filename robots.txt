@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://parque-cahuita.infinityfreeapp.com/sitemap.xml
