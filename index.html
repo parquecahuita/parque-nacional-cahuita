@@ -3,52 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parque Nacional Cahuita | Costa Rica</title>
-    <meta name="description" content="Descubre el Parque Nacional Cahuita en Costa Rica. Playas de arena blanca, arrecifes de coral y gran biodiversidad en el Caribe Sur.">
-    
-    <!-- Open Graph Tags (SEO) -->
-    <meta property="og:title" content="Parque Nacional Cahuita | Costa Rica">
-    <meta property="og:description" content="Explora los senderos, arrecifes y la fauna única del Parque Nacional Cahuita.">
-    <meta property="og:type" content="website">
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Parque Nacional Cahuita | Caribe Sur, Costa Rica</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <header class="header">
-        <h1>Parque Nacional Cahuita</h1>
-        <p>Caribe Sur, Costa Rica</p>
-        <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="pages/senderos.html">Senderos</a>
-            <a href="pages/biodiversidad.html">Biodiversidad</a>
-            <a href="pages/contacto.html">Contacto</a>
-        </nav>
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Parque Nacional Cahuita</h1>
+            <p>Donde el bosque tropical se encuentra con el arrecife del Caribe</p>
+        </div>
     </header>
 
-    <main class="main-content">
-        <section class="hero">
-            <h2>Un Paraíso Terrestre y Marino</h2>
-            <p>El Parque Nacional Cahuita resguarda una de las áreas marinas y boscosas más hermosas de Costa Rica, destacando sus arrecifes de coral y bosques tropicales.</p>
+    <nav class="navbar">
+        <a href="#acerca">Acerca del Parque</a>
+        <a href="#atracciones">Atracciones</a>
+        <a href="#fauna">Flora y Fauna</a>
+        <a href="#informacion">Información Práctica</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- Sección: Acerca del Parque -->
+        <section id="acerca" class="card">
+            <h2>Acerca del Parque Nacional Cahuita</h2>
+            <p>
+                Ubicado en la provincia de Limón, en la costa caribeña de Costa Rica, el Parque Nacional Cahuita 
+                es famoso por sus playas de arena blanca, sus arrecifes de coral y su abundante biodiversidad. 
+                Fue creado en 1970 para proteger el arrecife coralino más extenso del país y representa un modelo único 
+                de co-manejo comunitario entre el Estado y los vecinos de la localidad.
+            </p>
         </section>
 
-        <section class="cards">
-            <article class="card">
-                <h3>Playas y Arrecifes</h3>
-                <p>Disfruta de las aguas cristalinas de Playa Blanca y Puerto Vargas, perfectas para practicar snorkel en el arrecife de coral.</p>
-            </article>
-            <article class="card">
-                <h3>Fauna Silvestre</h3>
-                <p>Observa monos congo, perezosos, tucanes y mapaches a lo largo del sendero costero.</p>
-            </article>
+        <!-- Sección: Atracciones -->
+        <section id="atracciones" class="card">
+            <h2>Principales Atracciones</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Arrecife de Coral</h3>
+                    <p>Alberga más de 35 especies de corales, 123 especies de peces marinos y una rica diversidad de moluscos y crustáceos.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Playa Blanca y Puerto Vargas</h3>
+                    <p>Hermosas playas ideales para caminar, descansar y disfrutar de un entorno natural virgen rodeado de palmeras.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Sendero Terrestre</h3>
+                    <p>Un recorrido de aproximadamente 8 km que bordea la costa desde el sector de Cahuita hasta el sector de Puerto Vargas.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- Sección: Flora y Fauna con Interactividad -->
+        <section id="fauna" class="card">
+            <h2>Biodiversidad</h2>
+            <p>Durante tu visita es muy común observar una gran variedad de especies en su hábitat natural:</p>
+            <ul>
+                <li><strong>Mamíferos:</strong> Monos aulladores (congos), monos carablanca, perezosos de dos y tres dedos, coatíes y racones.</li>
+                <li><strong>Aves:</strong> Tucanes, garzas, gavilanes y el ibis verde.</li>
+                <li><strong>Vida Marina:</strong> Tortugas marinas (carey y verde), rayas, peces loro y pequeños tiburones de arrecife.</li>
+            </ul>
+
+            <!-- Contador interactivo mediante JS -->
+            <div class="interactivo-box">
+                <h3>¿Estás en el parque?</h3>
+                <p>Especies observadas hoy: <strong id="contador-fauna">0</strong></p>
+                <button id="btn-registrar">¡Registrar animal visto! 🐒</button>
+            </div>
+        </section>
+
+        <!-- Sección: Información Práctica -->
+        <section id="informacion" class="card">
+            <h2>Información para Visitantes</h2>
+            <div class="info-box">
+                <p><strong>Horario de atención:</strong> Todos los días de 8:00 a.m. a 4:00 p.m.</p>
+                <p><strong>Sectores de Ingreso:</strong></p>
+                <ul>
+                    <li><strong>Playa Blanca (Cahuita):</strong> Entrada con donación voluntaria para el mantenimiento del parque.</li>
+                    <li><strong>Puerto Vargas:</strong> Entrada con tarifa oficial del SINAC ($5.65 para extranjeros / ₡1.130 para nacionales).</li>
+                </ul>
+                <p><strong>Recomendaciones:</strong> Llevar agua, protector solar biodegradable, repelente, calzado cómodo para caminar y evitar alimentar a los animales salvajes.</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Parque Nacional Cahuita - Proyecto Web a la Medida</p>
+        <p>&copy; 2026 Parque Nacional Cahuita - Proyecto Educativo</p>
     </footer>
 
+    <!-- Vinculación del JavaScript al final -->
     <script src="js/script.js"></script>
 </body>
 </html>
