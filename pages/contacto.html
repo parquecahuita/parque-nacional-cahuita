@@ -8,24 +8,51 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="senderos.html">Senderos</a>
+        <a href="biodiversidad.html">Biodiversidad</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
     <header class="hero">
         <div class="hero-overlay">
-            <h1>Contacto y Ubicación</h1>
+            <h1>Ubicación y Acceso</h1>
             <p>Planifica tu visita al parque</p>
         </div>
-        <nav class="navbar">
-            <a href="../index.html">Inicio</a>
-            <a href="senderos.html">Senderos</a>
-            <a href="biodiversidad.html">Biodiversidad</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
     </header>
 
     <main class="container">
         <section class="card">
-            <h2>Información para Visitantes</h2>
-            <p>Ubicado en Talamanca, Provincia de Limón. Abierto todos los días en horario regular para el disfrute de locales y extranjeros.</p>
-            <img src="../img/puerto_vargas.webp" alt="Sector Puerto Vargas" class="img-tarjeta">
+            <img src="../img/sendero_costa_rica.webp" alt="Parque Nacional Cahuita" class="img-tarjeta">
+            <p>El parque se encuentra en el cantón de Talamanca, provincia de Limón, a 42 km al sur de la ciudad de Limón.</p>
+            
+            <div class="info-box" style="background-color: #eaf2ed; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                <p><strong>Sector Playa Blanca:</strong> Ingreso por el pueblo de Cahuita.</p>
+                <p><strong>Sector Puerto Vargas:</strong> Ingreso sobre la carretera principal hacia Puerto Viejo.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Formulario de Consultas</h2>
+            <form action="#" method="POST">
+                <div style="margin-bottom: 15px;">
+                    <label for="nombre" style="display: block; margin-bottom: 5px; font-weight: bold;">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="correo" style="display: block; margin-bottom: 5px; font-weight: bold;">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="mensaje" style="display: block; margin-bottom: 5px; font-weight: bold;">Mensaje o consulta:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+
+                <button type="submit" style="width: 100%; background-color: #1b4d3e; color: white; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Enviar Consulta</button>
+            </form>
         </section>
     </main>
 
