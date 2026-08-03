@@ -6,6 +6,7 @@
     <title>Parque Nacional Cahuita | Caribe Sur, Costa Rica</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS en subcarpeta -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -13,15 +14,14 @@
     <header class="hero">
         <div class="hero-overlay">
             <h1>Parque Nacional Cahuita</h1>
-            <p>Donde el bosque tropical se encuentra con el arrecife del Caribe</p>
         </div>
     </header>
 
     <nav class="navbar">
         <a href="#acerca">Acerca del Parque</a>
-        <a href="#atracciones">Atracciones</a>
-        <a href="#fauna">Flora y Fauna</a>
-        <a href="#informacion">Información Práctica</a>
+        <a href="pages/senderos.html">Senderos</a>
+        <a href="pages/biodiversidad.html">Biodiversidad</a>
+        <a href="pages/contacto.html">Contacto</a>
     </nav>
 
     <main class="container">
@@ -29,6 +29,7 @@
         <!-- Sección: Acerca del Parque -->
         <section id="acerca" class="card">
             <h2>Acerca del Parque Nacional Cahuita</h2>
+            <img src="img/parque_cahuita.jpg" alt="Parque Nacional Cahuita" class="img-tarjeta">
             <p>
                 Ubicado en la provincia de Limón, en la costa caribeña de Costa Rica, el Parque Nacional Cahuita 
                 es famoso por sus playas de arena blanca, sus arrecifes de coral y su abundante biodiversidad. 
@@ -43,20 +44,23 @@
             <div class="grid">
                 <div class="grid-item">
                     <h3>Arrecife de Coral</h3>
+                    <img src="img/arrecife.jpg" alt="Arrecife de Coral" class="img-tarjeta">
                     <p>Alberga más de 35 especies de corales, 123 especies de peces marinos y una rica diversidad de moluscos y crustáceos.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Playa Blanca y Puerto Vargas</h3>
+                    <h3>Playa Blanca</h3>
+                    <img src="img/playa_blanca.jpg" alt="Playa Blanca Cahuita" class="img-tarjeta">
                     <p>Hermosas playas ideales para caminar, descansar y disfrutar de un entorno natural virgen rodeado de palmeras.</p>
                 </div>
                 <div class="grid-item">
                     <h3>Sendero Terrestre</h3>
+                    <img src="img/sendero_costa_rica.webp" alt="Sendero Terrestre" class="img-tarjeta">
                     <p>Un recorrido de aproximadamente 8 km que bordea la costa desde el sector de Cahuita hasta el sector de Puerto Vargas.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Sección: Flora y Fauna con Interactividad -->
+        <!-- Sección: Flora y Fauna -->
         <section id="fauna" class="card">
             <h2>Biodiversidad</h2>
             <p>Durante tu visita es muy común observar una gran variedad de especies en su hábitat natural:</p>
@@ -66,7 +70,7 @@
                 <li><strong>Vida Marina:</strong> Tortugas marinas (carey y verde), rayas, peces loro y pequeños tiburones de arrecife.</li>
             </ul>
 
-            <!-- Contador interactivo mediante JS -->
+            <!-- Contador interactivo JS -->
             <div class="interactivo-box">
                 <h3>¿Estás en el parque?</h3>
                 <p>Especies observadas hoy: <strong id="contador-fauna">0</strong></p>
@@ -75,26 +79,27 @@
         </section>
 
         <!-- Sección: Información Práctica -->
-        <section id="informacion" class="card">
+        <section id="informacion" class="card" style="text-align: center;">
             <h2>Información para Visitantes</h2>
-            <div class="info-box">
+            <div class="info-box" style="text-align: left;">
                 <p><strong>Horario de atención:</strong> Todos los días de 8:00 a.m. a 4:00 p.m.</p>
                 <p><strong>Sectores de Ingreso:</strong></p>
                 <ul>
                     <li><strong>Playa Blanca (Cahuita):</strong> Entrada con donación voluntaria para el mantenimiento del parque.</li>
                     <li><strong>Puerto Vargas:</strong> Entrada con tarifa oficial del SINAC ($5.65 para extranjeros / ₡1.130 para nacionales).</li>
                 </ul>
-                <p><strong>Recomendaciones:</strong> Llevar agua, protector solar biodegradable, repelente, calzado cómodo para caminar y evitar alimentar a los animales salvajes.</p>
+                <p style="margin-top: 10px;"><strong>Recomendaciones:</strong> Llevar agua, protector solar biodegradable, repelente, calzado cómodo para caminar y evitar alimentar a los animales salvajes.</p>
             </div>
+            
+            <a href="https://www.sinac.go.cr" target="_blank" class="btn-entradas">Adquiere tu pase</a>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2026 Parque Nacional Cahuita - Proyecto Educativo</p>
     </footer>
 
-    <!-- Vinculación del JavaScript al final -->
+    <!-- JS en subcarpeta -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -4,44 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senderos | Parque Nacional Cahuita</title>
-    <meta name="description" content="Conoce los senderos terrestres y marinos del Parque Nacional Cahuita.">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- Ruta corregida con '../' para que encuentre el CSS desde la carpeta pages -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
-    <header class="header">
-        <h1>Senderos de Cahuita</h1>
-        <p>Recorridos entre bosque tropical y el mar Caribe</p>
-        <nav class="nav">
-            <a href="../index.html">Inicio</a>
-            <a href="senderos.html">Senderos</a>
-            <a href="biodiversidad.html">Biodiversidad</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Senderos del Parque</h1>
+            <p>Recorre la costa caribeña entre el bosque y el mar</p>
+        </div>
     </header>
 
-    <main class="main-content">
-        <section class="hero">
-            <h2>Rutas Principales</h2>
-            <p>El parque cuenta con senderos planos de fácil acceso que bordean la costa caribeña.</p>
+    <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="senderos.html">Senderos</a>
+        <a href="biodiversidad.html">Biodiversidad</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Sendero Principal: Cahuita a Puerto Vargas</h2>
+            <img src="../img/sendero_costa_rica.webp" alt="Sendero principal Parque Cahuita" class="img-tarjeta">
+            <p>
+                Este sendero bordea la costa durante unos 8 km. Es una caminata plana y accesible que conecta el sector de Playa Blanca con el sector de Puerto Vargas, permitiendo observar fauna silvestre a lo largo de todo el recorrido.
+            </p>
         </section>
 
-        <section class="cards">
-            <article class="card">
-                <h3>Sendero Kelly Creek a Punta Cahuita</h3>
-                <p>Un recorrido de 7 km que bordea la playa. Ideal para observar monos, perezosos y aves mientras caminas a la sombra de los cocoteros.</p>
-            </article>
-            <article class="card">
-                <h3>Sendero Puerto Vargas</h3>
-                <p>Cuenta con pasarelas elevadas de madera sobre áreas de manglar, permitiendo un acceso seguro y respetuoso con el ecosistema.</p>
-            </article>
+        <section class="card">
+            <h2>Puntos de Interés en la Ruta</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Playa Blanca</h3>
+                    <img src="../img/playa_blanca.jpg" alt="Playa Blanca Cahuita" class="img-tarjeta">
+                    <p>Punto de partida en el sector de Cahuita. Zona ideal para nadar en aguas tranquilas.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Punta Cahuita</h3>
+                    <img src="../img/parque_cahuita.jpg" alt="Punta Cahuita" class="img-tarjeta">
+                    <p>Ubicada a mitad de camino, es la zona más cercana al arrecife de coral.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Puerto Vargas</h3>
+                    <img src="../img/puerto_vargas.jpg" alt="Sector Puerto Vargas" class="img-tarjeta">
+                    <p>Sector con pasarelas elevadas sobre el bosque de manglar y área de parqueo.</p>
+                </div>
+            </div>
         </section>
+
+        <section class="card">
+            <h2>Consejos para la Caminata</h2>
+            <ul>
+                <li>Lleva al menos 2 litros de agua por persona.</li>
+                <li>Usa calzado cerrado o sandalias de senderismo con buen agarre.</li>
+                <li>No dejes basura en los senderos.</li>
+                <li>Mantén distancia prudente de los animales silvestres.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Parque Nacional Cahuita - Proyecto Web a la Medida</p>
+        <p>&copy; 2026 Parque Nacional Cahuita - Proyecto Educativo</p>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 </html>
